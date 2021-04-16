@@ -14,7 +14,8 @@ def checkout(branch) {
         } catch (Exception e) {
 
             echo "found Exception...."
-            new CheckoutException("error during checkout", "Federico")
+            CheckoutException ce = new CheckoutException("error during checkout", "Federico")
+            ce.getOut("Federico")
             echo "end manage excepotion"
 
         }
@@ -29,6 +30,12 @@ class CheckoutException extends Exception {
     public CheckoutException(message, name) {
 
         super(message)
+        println "${name}"
+
+    }
+
+    public getOut(name) {
+
         println "${name}"
 
     }
