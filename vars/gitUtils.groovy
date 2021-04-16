@@ -13,7 +13,7 @@ def checkout(branch) {
 
         } catch (Exception e) {
 
-            throw new CheckoutException("error during checkout", "Federico")
+            new CheckoutException("error during checkout", "Federico")
 
         }
 
