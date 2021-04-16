@@ -3,7 +3,7 @@ def checkout(branch) {
 
     script {
 
-        echo "checking out"
+        echo "checking out:${branch}"
 
     }
 
