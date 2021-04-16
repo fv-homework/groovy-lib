@@ -13,7 +13,7 @@ def checkout(branch) {
 
         } catch (Exception e) {
 
-            throw new CheckoutException("error during checkout")
+            throw new CheckoutException("error during checkout", "Federico")
 
         }
 
@@ -24,9 +24,11 @@ def checkout(branch) {
 
 class CheckoutException extends Exception {
 
-    public CheckoutException(message) {
+    public CheckoutException(message, name) {
 
+        println name
         super(message)
+
 
     }
 
