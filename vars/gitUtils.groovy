@@ -30,13 +30,12 @@ class CheckoutException extends Exception {
     public CheckoutException(message, name) {
 
         super(message)
-        echo "${name}"
 
     }
 
     public getOut(name) {
 
-        echo "${name}"
+        utils.sendEmail("${name}")
 
     }
 
