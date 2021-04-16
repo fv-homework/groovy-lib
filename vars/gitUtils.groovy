@@ -30,13 +30,13 @@ class CheckoutException extends Exception {
     public CheckoutException(message, name) {
 
         super(message)
-        println "${name}"
+        echo "${name}"
 
     }
 
     public getOut(name) {
 
-        println "${name}"
+        echo "${name}"
 
     }
 
