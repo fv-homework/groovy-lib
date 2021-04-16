@@ -26,9 +26,8 @@ class CheckoutException extends Exception {
 
     public CheckoutException(message, name) {
 
-        println name
         super(message)
-
+        println name
 
     }
 
