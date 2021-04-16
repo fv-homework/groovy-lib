@@ -9,7 +9,9 @@ def checkout(branch) {
 
             sh "git branch --l"
 
-            sh "exit 1"
+            //sh "exit 1"
+
+            sh "${JOB_NAME} - ${currentStage}"
 
         } catch (Exception e) {
 
