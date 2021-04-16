@@ -36,8 +36,7 @@ class CheckoutException extends Exception {
     }
 
     public getOut(name) {
-
-        utils.sendEmail("${name}")
+        
 
     }
 
